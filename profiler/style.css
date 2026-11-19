@@ -1,27 +1,85 @@
 body {
   margin: 0;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.login-page {
   min-height: 100vh;
-  display: grid;
-  place-items: center;
-  background: linear-gradient(135deg, #f5f7ff, #dfe9ff);
-  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  background-image: url("images/foods_Pods.jpg  ");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.profile-card {
-  background: #ffffff;
-  padding: 2rem 3rem;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  text-align: center;
+.login-form {
+  width: 100%;
+  min-height: 165px;
+  box-sizing: border-box;
+  padding: 22px 12px;
+  border: 1px solid rgba(180, 180, 180, 0.45);
+  border-radius: 24px;
+  background-color: rgba(255, 255, 255, 0.94);
 }
 
-h1 {
-  margin-bottom: 0.5rem;
-  color: #1d3557;
+.login-form h1 {
+  margin: 0 0 10px;
+  color: #273c72;
+  font-size: 12px;
 }
 
-#profile-line {
-  margin: 0;
-  font-size: 1.1rem;
-  color: #457b9d;
+.login-form label {
+  display: block;
+  margin-top: 7px;
+  color: #333;
+  font-size: 9px;
+}
+
+.login-form input {
+  width: 110px;
+  box-sizing: border-box;
+  height: 19px;
+  margin-top: 3px;
+  padding: 2px 4px;
+  border: 1px solid #b8bdc6;
+  border-radius: 2px;
+}
+
+.password-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.password-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form button {
+  height: 19px;
+  margin-bottom: 0;
+  padding: 1px 5px;
+  border: 1px solid #b8bdc6;
+  border-radius: 2px;
+  background-color: #f3f4f6;
+  color: #333;
+  font-size: 9px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #e5e7eb;
+}
+
+.login-form button:focus-visible,
+.login-form input:focus-visible {
+  outline: 2px solid #526da9;
+  outline-offset: 2px;
+}
+
+#login-message {
+  margin-bottom: 0;
+  font-size: 10px;
 }

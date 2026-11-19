@@ -1,1 +1,8 @@
-document.getElementById("profile-line").textContent = "Hello! I am a developer who loves building simple and useful things.";
+const loginForm = document.getElementById("login-form");
+const loginMessage = document.getElementById("login-message");
+
+loginForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  loginMessage.textContent =
+    " Login submitted!";
+});
